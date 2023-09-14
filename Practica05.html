@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica04</title>
+    <title>Practica05</title>
     <style>
         
         img {
         
             box-shadow: 5px 10px 20px red;
+            border-radius: 10px 40% 30%;
         }
 
         figure{
@@ -16,6 +17,11 @@
             width: 300px;
             display: inline-block;
         }
+
+        img.redonda{
+            border-radius: 50%;
+        }
+
     </style>
 </head>
 <body>
@@ -37,8 +43,19 @@
             `
            
         }
-        app.innerHTML = Picture({id: "10",nombre: "Jonh"})
-        app.innerHTML += Picture({id: "21",nombre: "Jame"})
+        app.innerHTML = Picture({id: "1",nombre: "Jonh"})
+        app.innerHTML += Picture({id: "2",nombre: "Jame"})
+        app.innerHTML += Picture({id: "3",nombre: "Joame"})
+
+        const lista= document.querySelectorAll("img")
+        for (let i=0; i<lista.length; i++){
+            lista[i].addEventListener("click", () => {
+                //console.log(lista[i])
+                //lista[i].style.borderRadius = "50%"
+                lista[i].classList.toggle("redonda")
+            });
+        }
+
     </script>
 </body>
 </html>
