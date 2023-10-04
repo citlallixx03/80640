@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica07</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        form{
+            
+            box-shadow: 15px 15px 10px;
+            width: 450px;
+            /*margin: 200px;*/
+            margin: 0 auto;
+            border: 1px solid lightgray;
+            padding: 25px;
+            border-radius: 5px;
+        }
+        label{
+            display: block;
+        }
+        fieldset{
+            margin-bottom: 30px;
+            border: 1px solid lightgrey;
+        }
+        input[type="text"]{
+            margin-bottom: 30px;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+        input[type="submit"]{
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            width: 100%;
+            padding: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Contacto</h1>
+    <form action=" " method="post" id="formulario">
+        <fieldset >
+            <legend>Informacion Personal</legend>
+            <label for="user">Nombre:</label>
+            <input type="text" id="user" name="user">
+            <label for="email">Correo Electrónico:</label>
+            <input type="text" id="email" name="email">
+        </fieldset>
+        <fieldset>
+            <legend>Informacion de Direccion</legend>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion">
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad">
+        </fieldset>
+        <input type="submit" value="Enviar" id="envio">
+
+    </form>
+</body>
+</html>
+
+
+
