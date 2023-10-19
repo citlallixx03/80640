@@ -1,16 +1,18 @@
-function MiFieldSet (props){
-    const {titulo, txt1, txt2}= props
+import './MiFieldSet.css'
+
+function MyFieldSet(props){
+    const {titulo, txt1, txt2} = props
     return (
         <>
-            <fieldset>
+            <fieldSet>
                 <legend>{titulo}</legend>
-                <label htmlFor={txt1}>{txt1}: </label>
-                <input type="text" id={txt1} />
-                <label htmlFor={txt2}>{txt2}: </label>
+                <label htmlFor={txt1}>{txt1}</label>
+                <input type="text" id={txt1}/>
+                <label htmlFor={txt2}>{txt2}</label>
                 <input type="text" id={txt2}/>
-            </fieldset>
+            </fieldSet> 
         </>
     )
 }
 
-export default MiFieldSet
+export default MyFieldSet
